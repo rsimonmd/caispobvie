@@ -155,7 +155,7 @@
     -moz-box-shadow: 5px 5px 5px #aaa;
     -webkit-box-shadow: 5px 5px 5px #aaa;
     box-shadow: 5px 5px 5px #aaa;
-    border-radius: 2px;  
+    border-radius: 2px;
 }
 
 .polaroid img {
@@ -207,6 +207,8 @@
 /* Brights */
   --vibrant-red: #EE3130;
   --orange: #EB6F1B;
+  --orange2: #FF8811;
+  --orange3: #BC4123;
   --warm-yellow: #EBA411;
   --vc-green: #093323;
   --dark-green: #004D27;
@@ -216,6 +218,7 @@
   --mid-blue: #00508C;
   --light-blue: #8CBAD4;
   --mauve-blue: #3A5DAE;
+  --maroon: #5B4923;
 /* Neutrals */
   --dark-warm-grey: #706359;
   --mid-warm-grey: #ACA6A2;
@@ -274,6 +277,18 @@ Extra classes for size and color
 
 .orange {
   color: var(--orange);
+}
+
+.orange2 {
+  color: var(--orange2);
+}
+
+.orange3 {
+  color: var(--orange3);
+}
+
+.maroon {
+  color: var(--maroon);
 }
 
 .warm-yellow {
@@ -380,13 +395,13 @@ Extra classes for size and color
 .bolder { font-weight: bolder; }
 
 /******************
- * 
+ *
  * Coloured content boxes
  *
  ****************/
 
 
-.content-box { 
+.content-box {
     box-sizing: content-box;
     	background-color: #e2e2e2;
   /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
@@ -442,6 +457,10 @@ Extra classes for size and color
 
 .content-box-yellow {
 	background-color: #fef5c4;
+}
+
+.content-box-orange {
+	background-color: #BC4123;
 }
 
 .full-width {

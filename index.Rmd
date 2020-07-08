@@ -6,10 +6,10 @@ institute: "ISP Lyon"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
+    seal: false
     lib_dir: index_files/libs
-    css: ["xaringan-themer.css", "default-fonts", "index_files/footer-header.css", "index_files/mycss.css", "default"]
+    css: ["index_files/xaringan-themer.css", "index_files/footer-header.css", "index_files/mycss.css", "default"]
     nature:
-      seal: false
       ratio: "16:9"
       highlightStyle: monokai
       highlightLines: true
@@ -17,11 +17,10 @@ output:
       slideNumberFormat: |
         <div class="progress-bar-container">
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
-          </div>
-        </div>
+            </div>
+            </div>
 ---
 layout: true
-class: inverse
 
 <div class="my-footer"><span>CAISP 2020 - Obvie Apps    
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -48,14 +47,15 @@ Raphaël Simon</span></div>
 }
 </style>
 ---
-class: center, middle, inverse
+class: center, inverse
 count: false
+background-image: url(index_files/adds/clispro.png)
+background-position: 50% 75%
 
-# .warm-yellow[Obvie: de l'idée à l'application .font30[(*)]]
+# .content-box-orange[Obvie: de l'idée à l'application .font30[(*)]]
 .footnotes[.font80[<i>* Ou comment transformer un tacos en projet</i>]]
-## .light-cool-grey[Raphaël SIMON]
-### .light-blue[CAISP 2020]
-
+## .content-box-orange[Raphaël SIMON]
+---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(echo = FALSE)
@@ -64,40 +64,85 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_mono_accent(
-  base_color = "#1c5253",
+  base_color = "#232e3f",
   header_font_google = google_font("Roboto Condensed"),
-  text_font_google   = google_font("Roboto Mono", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
+  text_font_google   = google_font("Poppins", "400", "400i"),
+  code_font_google   = google_font("Jet Jane Mono")
 )
 ```
 
----
 class: center, middle
 # Introduction
+---
+## .center[Tout démarre lors d'une pause déjeuner entre ISP] 
+--
+background-image: url(https://thumbs.gfycat.com/SelfassuredForsakenAnt-small.gif)
+background-size: 50%
+background-position: center middle
+--
+background-image: 
 
-Tout démarre lors d'une pause déjeuner entre ISP
----
-Nous sommes à la fin du mois de Juillet et les résultats des ECNi2019 occupent la discussion.
----
-Rapidement, la conversation s'oriente vers le portail Celine du CNG, et les douleureux souvenirs de parcourir ces tableaux blancs et violets.
+* 25 Juillet 2019: les résultats des ECNi2019 occupent la discussion.
+--
 
-Il faut iframe ça https://www.cng.sante.fr/sites/default/files/rangslimites2019.html
+* Rapidement, la conversation s'oriente vers le portail Celine du CNG, et les douleureux souvenirs de parcourir ces tableaux blancs et violets.  
+--
+<iframe src="https://www.cng.sante.fr/sites/default/files/rangslimites2019.html" width = 1000 height = 300 ></iframe>  
+--
+<br><br>
+<p> &rarr; Deux enjeux rapidement repérés: .content-box-orange[.white[Lisibilité]] et .content-box-orange[.white[Anticipation]]</p>
 
-On parle de la difficulté à se rendre compte de la volatilité des voeux
 ---
-On parle des rumeurs terribles, comme les gens qui font des "faux voeux" pour garder la palce aux copains! (gif fake news https://media.giphy.com/media/3NbTERnmPrcoE/giphy.gif)
+## .center[Les questions qu'on se pose]
+--
+
+* Quelles sont les spé les plus populaires? Et les villes?
+--
+
+- Combien de gens n'ont pas encore fait de voeu?
+--
+name: questions
+- Combien de places de Santé Publique reste-t-il en France ?!
+--
+background-image: url(https://media.giphy.com/media/3NbTERnmPrcoE/giphy.gif)
+background-size: 50%  
+background-position: 75% 75%
 ---
-Et puis on se demande: est-ce qu'on ne pourrait pas tenter de faire quelque chose de ces données?
+template: questions
+* Est-ce qu'il y a vraiment des gens qui font des "faux voeux" pour garder la place aux copains?
+--
+<br><br>
+.font110[.content-box-orange[.white[Est-ce qu'on ne pourrait pas faire mieux avec ces données?]]] 
+
 ---
-Il se trouve qu'on partage la même ambiance "mois d'Août" en stage:
-image de bureaux vides
+class: center
+## Ambiance "mois d'Août" en stage
+--
+background-image: url(index_files/adds/emptyoffice.jpg)
+background-position: 50% 75%
+background-size: 60%
 ---
+class: inverse
+## .center[Objectif]
+
+<br><br>
+&rarr; .font120[.content-box-orange[.white[Créer une application en libre accès permettant aux étudiants une meilleure expérience des choix post-ECNi]]]  
+---
+class: center, middle
 # Méthodes
 ---
-Les données utilisées:
-- Les tableaux de pré-choix/choix disponibles en clair
-- Les tableaux de nombre de postes ouverts
-- Le listing des étudiants, leur classement et CESP/ESSA 
+## .center[Méthodes] 
+#### Les données utilisées:  
+--
+
+* Les tableaux de pré-choix/choix disponibles en clair
+--
+
+* Les tableaux de nombre de postes ouverts
+--
+
+* Le listing des étudiants, leur classement et CESP/ESSA
+
 ---
 Il ne nous reste que qque jours avant l'ouverture des voeux
 gif coding frenetique: https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif
