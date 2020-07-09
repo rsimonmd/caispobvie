@@ -92,13 +92,24 @@ background-image:
 
 * 25 Juillet 2019: les résultats des ECNi2019 occupent la discussion.
 --
-
+name: beforeiframe
 * Rapidement, la conversation s'oriente vers le portail Celine du CNG, et les douleureux souvenirs de parcourir ces tableaux blancs et violets.  
 --
 <iframe src="https://www.cng.sante.fr/sites/default/files/rangslimites2019.html" width = 1000 height = 300 ></iframe>  
---
+---
+template: beforeiframe
 <br><br>
-<p> &rarr; Deux enjeux rapidement repérés: .content-box-orange[.white[Lisibilité]] et .content-box-orange[.white[Anticipation]]</p>
+&rarr; Deux enjeux rapidement repérés:
+--
+background-image: url(https://i.imgflip.com/1mbcm8.jpg)
+background-size: 20%
+background-position: 20% 75%
+.content-box-orange[.white[Lisibilité]]
+--
+background-image: url(https://i.imgflip.com/1mbcm8.jpg), url(https://media.giphy.com/media/XdORe0Wi4E1CuXP2Nm/giphy.gif)
+background-size: 20%, 30%
+background-position: 20% 75%, 70% 75%
+et .content-box-orange[.white[Interprétation]]
 
 ---
 
@@ -268,7 +279,7 @@ background-size: 50%, 30%
 background-position: 20% 50%, 90%, 90%
 ---
 background-image: 
-class: center, middle, inverse
+class: center, middle
 
 # Et les copains aussi!
 ---
@@ -286,24 +297,27 @@ class: center, middle, inverse
 # L'internat de santé publique c'est: 
 --
 
-* .font120[L'occasion d'acquérir des compétences hors de la médecine et de les mettre en pratique]
+* .font120[L'occasion d'acquérir des compétences hors de la médecine et de les mettre en pratique au service de bonnes causes]
 --
 
-* .font120[Des opportunités à foison de collaborer avec vos co-internes]
+* .font120[Des opportunités à foison de collaborer avec vos co-internes et cimenter votre futur réseau]
 --
 
-* .font120[La porte ouverte à l'entrepreneuriat]
+* .font120[La porte ouverte à l'entrepreneuriat et/ou la constitution d'un portfolio de vos projets]  
 --
 
-* .font120[Des tacos qui sont plus que des tacos]
+<br>
+.center[.font140[.content-box-orange[.white[Des tacos qui sont plus que des tacos]]]]
+--
+background-image: url(https://media1.tenor.com/images/6fd0e9e0f057f07d9356e1d6d2355160/tenor.gif?itemid=16262619)
+background-size: 50%
+background-position: 50% 95%
 ---
 background-image: url(https://media.giphy.com/media/DAtJCG1t3im1G/giphy.gif)
 background-size: cover
 class: top, center, inverse
 
 # Merci de votre attention 
---
-
 <br><br><br><br><br><br><br><br>
 # Questions?
 .shadow[Contact: <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/> @RplSmn | <img src="https://img.icons8.com/fluent/48/000000/new-post.png"/> raphael.simon.contact@gmail.com]
