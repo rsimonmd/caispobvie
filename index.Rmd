@@ -61,6 +61,11 @@ background-position: 50% 75%
 ## .content-box-orange[Raphaël SIMON]  
 ### ISP Lyon | 8e semestre  
 .footnotes[.font70[<i>* Ou comment transformer un tacos en projet</i>]]
+
+???
+
+Bonjour, je suis Raphaël Simon, interne lyonnais en 8e semestre et j'ai choisi de vous présenter un projet qui sort de l'ordinaire du CAISP puisqu'il ne s'agit pas d'un projet de recherche ou lié à un stage.
+Je vais vous parler d'Obvie, une collaboration issue d'un tacos
 ---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -79,6 +84,7 @@ style_mono_accent(
 ```
 
 class: center, middle, inverse
+count: false
 
 # Introduction
 ---
@@ -111,6 +117,10 @@ background-size: 20%, 30%
 background-position: 20% 75%, 70% 75%
 et .content-box-orange[.white[Interprétation]]
 
+???
+
+Fin juillet 2019, 6 ou 7 ISP lyonnais sont assis en terrasse pour déjeuner. Au menu: tacos!  
+Et au menu de la conversation, les résultats de l'ECN 2019. 
 ---
 
 ## .center[Les questions qu'on se pose]
@@ -131,6 +141,9 @@ background-image:
 <br><br><br><br>
 .center[.font140[.content-box-orange[.white[Comment faire mieux avec ces données?]]]] 
 
+???
+
+Ce qu'on pourrait qualifier de nos "questions de recherche" sont les suivantes
 ---
 class: center, inverse, middle
 background-image: url(https://images.unsplash.com/photo-1485848395967-65dff62dc35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80)
@@ -180,14 +193,19 @@ background-size: cover
 .font130[Les données utilisées:]
 --
 
-* Tableaux de pré-choix/choix disponibles via celine/chiron
+* Tableau dynamique de pré-choix/choix
 --
 
-* Tableaux de nombre de postes ouverts via celine/chiron et confirmé par le JO
+* Tableau du nombre de postes ouverts par ville/spé 
 --
 
-* Listing des étudiants, leurs classements et CESP/ESSA via le JO
+* Listing des étudiants, leurs classements et CESP/ESSA
 
+???
+
+Tableau dynamique a recup tous les jours mini via celine
+Nb de postes celine + JO (peut changer!)
+Listing par le JO
 ---
 class: center, inverse, right
 background-image: url(https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80)
@@ -288,6 +306,10 @@ class: center, middle, inverse
 
 ???
 
+Je suis un D4 post ECN, j'arrive sur la page d'accueil et déjà je peux voir des informations génerales sur mon ECNi.
+
+Mais ce qui m'interesse le plus c'est l'onglet personalisé. Je peux dire que je suis 2020e, et observer les postes et/ou villes qui me restent. (faire demo)
+
 On a vu un usage constant de l'app durant 1 mois et demi. Depuis, on a moins de fréquentation mais elle n'a pas disparu!
 ---
 class: center, middle, inverse
@@ -322,4 +344,28 @@ class: top, center, inverse
 <br><br><br><br><br><br><br><br>
 # Des questions ou des idées d'amélioration?
 .shadow[Contact: <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/> @RplSmn | <img src="https://img.icons8.com/fluent/48/000000/new-post.png"/> raphael.simon.contact@gmail.com]
+
+???
+
+C'est tout, merci de m'avoir écouté et merci au CliSP de m'avoir laissé présenter mes projets ces deux dernières années.
+Au delá des questions, si vous avez des suggestions on est preneurs bien entendu!
+---
+
+# .center[Sources]  
+
+- Classements ECNi2019: [Legifrance](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038783224&dateTexte=&categorieLien=id)  
+- Listing: [CNG Celine](https://www.cngsante.fr/chiron/celine/listing.html)
+- R: https://www.r-project.org/
+- RShiny: https://shiny.rstudio.com/  
+- R 📦 utilisés dans l'app:  
+  * shinydashboard & shinydashboardPlus
+  * shinyWidgets
+  * ggplot2  
+  * dplyr  
+  * stringr
+  * plotly  
+  * rvest  
+  * httr  
+- Slides avec le 📦 {xaringan}  
+
 ---
