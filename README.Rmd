@@ -1,1 +1,6 @@
+# Présentation CAISP 2020  
+## Obvie: de l'idée à l'application
+
+Slides avec {xaringan}
+
 Raphael Simon 
