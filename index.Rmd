@@ -8,7 +8,7 @@ output:
   xaringan::moon_reader:
     seal: false
     lib_dir: index_files/libs
-    css: ["index_files/xaringan-themer.css", "index_files/footer-header.css", "index_files/mycss.css", "default"]
+    css: ["index_files/xaringan-themer.css", "index_files/footer-header.css", "index_files/mycss.css"]
     nature:
       ratio: "16:9"
       highlightStyle: monokai
@@ -21,11 +21,6 @@ output:
             </div>
 ---
 layout: true
-
-<div class="my-footer"><span>CAISP 2020 - Obvie Apps    
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-Raphaël Simon</span></div>  
 
 <style>
 .remark-slide-number {
@@ -46,20 +41,32 @@ Raphaël Simon</span></div>
   background-color: red;
 }
 </style>
+
+<div class="my-footer"><span> 
+CAISP 2020 - Obvie Apps
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+Raphaël Simon 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+rsimon-caisp2020@netlify.app </span></div>  
 ---
 class: center, inverse
 count: false
-background-image: url(index_files/adds/clispro.png)
+background-image: 
 background-position: 50% 75%
 
-# .content-box-orange[Obvie: de l'idée à l'application .font30[(*)]]
-.footnotes[.font80[<i>* Ou comment transformer un tacos en projet</i>]]
-## .content-box-orange[Raphaël SIMON]
+# Obvie: de l'idée à l'application .font30[(*)]  
+<img src="index_files/adds/clispro.png" width=800/>  
+## .content-box-orange[Raphaël SIMON]  
+### ISP Lyon | 8e semestre  
+.footnotes[.font70[<i>* Ou comment transformer un tacos en projet</i>]]
 ---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
@@ -67,14 +74,15 @@ style_mono_accent(
   base_color = "#232e3f",
   header_font_google = google_font("Roboto Condensed"),
   text_font_google   = google_font("Poppins", "400", "400i"),
-  code_font_google   = google_font("Jet Jane Mono")
-)
+  code_font_google   = google_font("Jet Jane Mono"),
+  outfile = "index_files/xaringan-themer.css")
 ```
 
-class: center, middle
+class: center, middle, inverse
+
 # Introduction
 ---
-## .center[Tout démarre lors d'une pause déjeuner entre ISP] 
+<h2>.center[Tout démarre lors d'une pause déjeuner entre ISP]</h2>
 --
 background-image: url(https://thumbs.gfycat.com/SelfassuredForsakenAnt-small.gif)
 background-size: 50%
@@ -93,16 +101,16 @@ background-image:
 <p> &rarr; Deux enjeux rapidement repérés: .content-box-orange[.white[Lisibilité]] et .content-box-orange[.white[Anticipation]]</p>
 
 ---
-## .center[Les questions qu'on se pose]
+<h2>.center[Questions]</h2>
 --
 
 * Quelles sont les spé les plus populaires? Et les villes?
 --
 
-- Combien de gens n'ont pas encore fait de voeu?
+* Combien de gens n'ont pas encore fait de voeu?
 --
 name: questions
-- Combien de places de Santé Publique reste-t-il en France ?!
+* Combien de places de Santé Publique reste-t-il en France ?!
 --
 background-image: url(https://media.giphy.com/media/3NbTERnmPrcoE/giphy.gif)
 background-size: 50%  
@@ -115,83 +123,186 @@ template: questions
 .font110[.content-box-orange[.white[Est-ce qu'on ne pourrait pas faire mieux avec ces données?]]] 
 
 ---
-class: center
-## Ambiance "mois d'Août" en stage
---
-background-image: url(index_files/adds/emptyoffice.jpg)
-background-position: 50% 75%
-background-size: 60%
+class: center, inverse, middle
+background-image: url(https://images.unsplash.com/photo-1485848395967-65dff62dc35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80)
+background-size: cover
+
+# Ambiance "mois d'Août" en stage
 ---
-class: inverse
+class: inverse, center
 ## .center[Objectif]
 
-<br><br>
-&rarr; .font120[.content-box-orange[.white[Créer une application en libre accès permettant aux étudiants une meilleure expérience des choix post-ECNi]]]  
+<br><br><br><br>
+.font150[.content-box-orange[.white[Créer une application en libre accès permettant aux étudiants une meilleure expérience des choix post-ECNi]]]  
+<br><br><br><br>
+.right[... En 3 semaines]
+--
+background-image: url(https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
+background-position: 50% 95%
+background-size: 40%
 ---
-class: center, middle
+class: center, middle, inverse
+
 # Méthodes
 ---
-## .center[Méthodes] 
-#### Les données utilisées:  
+background-image: url(https://images.unsplash.com/photo-1564767655658-4e6b365884ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+background-size: cover
+--
+background-image: 
+class: center, middle
+
+# .corporate-red[PROTEINES] .green[FIBRES]
+# .light-digi-gold[TORTILLA] .mauve-blue[CONDIMENTS] 
+---
+class: center, middle
+
+# .corporate-red[DONNÉES] .green[APPLICATION]
+# .light-digi-gold[HEBERGEMENT] .mauve-blue[COMMUNICATION] 
+---
+class: center, middle, inverse
+background-image: url(https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80)
+background-size: cover
+
+<br><br><br><br><br><br>
+# Protéines = Classements & tableaux CELINE
+---
+
+## .center[Classements & tableaux CELINE] 
+.font130[Les données utilisées:]
 --
 
-* Les tableaux de pré-choix/choix disponibles en clair
+* Tableaux de pré-choix/choix disponibles via celine/chiron
 --
 
-* Les tableaux de nombre de postes ouverts
+* Tableaux de nombre de postes ouverts via celine/chiron et confirmé par le JO
 --
 
-* Le listing des étudiants, leur classement et CESP/ESSA
+* Listing des étudiants, leurs classements et CESP/ESSA via le JO
 
 ---
-Il ne nous reste que qque jours avant l'ouverture des voeux
-gif coding frenetique: https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif
+class: center, inverse, right
+background-image: url(https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80)
+background-size: cover
+
+# Fibres = R Shiny
 ---
-On a 3 semaines pour
-- Elaborer un script qui nous permette de récupérer et trier les données de Celine (pré-choix et choix)
-  - Sans surcharger le portail!!
-- Apprendre à coder un RShiny
-- Designer nos graphs
-- Trouver un mode d'hebergement de l'app
-- Préparer notre communication
-- Tester, débugger et valider pour le lancement  
+
+## .center[RShiny]  
+.font130[Combinaison de 4 langages:]  
+--
+background-image: url(https://duckduckgo.com/i/e903addb.png)
+
+* .font110[R]
+--
+background-image: url(https://i.stack.imgur.com/Mmww2.png)
+* .font110[JavaScript]
+--
+background-image: url(https://www.logolynx.com/images/logolynx/s_cf/cf9600eac22a4dde77bf1a3c7cdae936.png)
+* .font110[HTML et CSS]  
+--
+background-image:
+
+<br><br>
+.white[.content-box-orange[.font120[&rarr; Permet de construire des applications web en utilisant R pour les calculs et le traitement des données côté serveur]]]
+---
+class: center, inverse, bottom
+background-image: url(https://images.unsplash.com/photo-1591266123515-46149ea0b0a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+background-size: cover
+
+# Tortilla = Shinyapps.io
+---
+background-image: url(index_files/adds/shinyapps.png)
+background-size: contain
+## .center[Shinyapps.io]  
+--
+background-image: 
+
+* .font110[Solution d'hébergement parmi d'autres comme: ]
+--
+
+  - Amazon AWS  
+  - Google Cloud  
+  - DigitalOcean  
+  - Heroku  
+  - Serveur autohébergé  
+--
+
+* .font110[Avantages:]  
+  * Extrêmement facile d'utilisation  
+  * Coût moindre (au début)  
+  * Développé par les dev de Shiny  
+--
+
+* .font110[Inconvénients:]  
+  * Peu de contrôle sur le comportement du serveur  
+  * Pas de stockage interne de données (à l'époque)  
+  * Cher si forte fréquentation
 
 ---
+class: left, inverse, bottom
+background-image: url(https://images.unsplash.com/photo-1517646458010-ea6bd9f4a75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+background-size: cover
+
+# Condiments = Réseaux sociaux
+---
+background-image: url(index_files/adds/facebook.png)
+background-size: 65%
+background-position: 50% 99%
+
+## .center[Réseaux sociaux]
+--
+background-image: url(index_files/adds/twitter.png)
+background-size: 70%
+background-position: 50% 50%
+--
+background-image: url(index_files/adds/fbrev.png)
+background-size: 50%
+background-position: 50% 50%
+
+.footnote[Commenté par le dev de CELINE ...]
+--
+background-image: url(index_files/adds/fbrev.png), url(https://media.giphy.com/media/DFNd1yVyRjmF2/giphy.gif)
+background-size: 50%, 30%
+background-position: 20% 50%, 90%, 90%
+---
+background-image: 
+class: center, middle, inverse
+
+# Et les copains aussi!
+---
+class: center, middle, inverse
+
 # Resultats
 ---
-<iframe src="https://rsapps.shinyapps.io/celineapp" width="1150" height="660" ></iframe> 
-
+<iframe src="https://rsapps.shinyapps.io/celineapp" width="100%" height="100%" ></iframe> 
 ---
-# Les graphs
-Countplot
-Ridgeplot
-Barplots
-Maps
-Sankey
-Lollipop
----
-# Les analyses
+class: center, middle, inverse
 
-- Nombre de postes restants total
-- Nb de postes par ville/spé
-- Popularité des villes/spé
-- Cartographie des postes pris
-- Correspondance entre les voeux et les choix def
-- Liens/déversement des spé/ville (sankey)
----
-# La communication
-
-iframe twitter? https://twitter.com/ObvieApps
-
-
----
 # Conclusion
-
-L'internat de santé publique c'est:
-- L'occasion d'acquérir des compétences hors de la médecine et de les mettre en pratique 
-- Des opportunités à foison de collaborer avec vos co-internes
-- La porte ouverte à l'entreprenariat
-- Des tacos qui sont plus que des tacos
 ---
-Gif et image de fin
-Merci
+
+# L'internat de santé publique c'est:
+--
+
+* .font120[L'occasion d'acquérir des compétences hors de la médecine et de les mettre en pratique]
+--
+
+* .font120[Des opportunités à foison de collaborer avec vos co-internes]
+--
+
+* .font120[La porte ouverte à l'entrepreneuriat]
+--
+
+* .font120[Des tacos qui sont plus que des tacos]
+---
+background-image: url(https://media.giphy.com/media/DAtJCG1t3im1G/giphy.gif)
+background-size: cover
+class: top, center, inverse
+
+# Merci de votre attention 
+--
+
+<br><br><br><br><br><br><br><br>
+# Questions?
+.shadow[Contact: <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/> @RplSmn | <img src="https://img.icons8.com/fluent/48/000000/new-post.png"/> raphael.simon.contact@gmail.com]
+---

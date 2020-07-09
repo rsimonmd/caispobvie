@@ -1,17 +1,10 @@
-/* Title slide changes*/
-
-.title-slide {
-  background-image: url(adds/logo.png);
-	background-position: bottom center;
-	background-size: 20%;
-}
-
 /* Helpers */
 
 .footnotes {
   position: absolute;
-  bottom: 3em;
-  right: 2em;
+  top: 10em;
+  transform: rotate(-90deg);
+  right: 0;
   padding-right: 4em;
   font-size: 80%;
 }
@@ -432,7 +425,7 @@ Extra classes for size and color
 }
 
 .content-box-gray {
-    background-color: #e2e2e2;
+    background-color: #161616;
 }
 
 .content-box-grey {

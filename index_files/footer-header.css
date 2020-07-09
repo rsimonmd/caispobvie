@@ -1,15 +1,3 @@
-div.my-header-logo {
-content: "";
-    position: absolute;
-    top: 0px;
-    right:   0px;
-    height: 75px;
-    width: 125px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("adds/logohcl.jpg");
-}
-
 div.my-footer {
     background-color: #272822;
     position: absolute;
