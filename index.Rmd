@@ -101,7 +101,8 @@ background-image:
 <p> &rarr; Deux enjeux rapidement repérés: .content-box-orange[.white[Lisibilité]] et .content-box-orange[.white[Anticipation]]</p>
 
 ---
-<h2>.center[Questions]</h2>
+
+## .center[Les questions qu'on se pose]
 --
 
 * Quelles sont les spé les plus populaires? Et les villes?
@@ -109,18 +110,19 @@ background-image:
 
 * Combien de gens n'ont pas encore fait de voeu?
 --
-name: questions
+
 * Combien de places de Santé Publique reste-t-il en France ?!
+--
+
+* Est-ce qu'il y a vraiment des gens qui font des "faux voeux" pour garder la place aux copains?
 --
 background-image: url(https://media.giphy.com/media/3NbTERnmPrcoE/giphy.gif)
 background-size: 50%  
-background-position: 75% 75%
----
-template: questions
-* Est-ce qu'il y a vraiment des gens qui font des "faux voeux" pour garder la place aux copains?
+background-position: 75% 80%
 --
-<br><br>
-.font110[.content-box-orange[.white[Est-ce qu'on ne pourrait pas faire mieux avec ces données?]]] 
+background-image: 
+<br><br><br><br>
+.center[.font140[.content-box-orange[.white[Est-ce qu'on ne pourrait pas faire mieux avec ces données?]]]] 
 
 ---
 class: center, inverse, middle
